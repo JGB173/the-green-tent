@@ -1,0 +1,114 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+        scroll-behavior: smooth;
+}
+
+/* ---- Set up site grid ----*/
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header" 
+    "main main main main" 
+    "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+
+header {
+    /* Location of the image */
+    background-image: url(the-green-tent-pics/IMG_6364.jpg);
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when
+    the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: #464646;
+    }
+
+main {
+    grid-area: main;
+    background-color: #fff; /* white */
+}
+
+footer {
+    color: #fff; /* white */
+    grid-area: footer;
+    background-color: #5D6C43; /* dark green */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "copyright name social";
+
+}
+
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    }
+}
+
+
+/* social media icons styling */
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white; 
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.social {
+    grid-area: social;
+    display: block;
+    text-align: center;
+}
