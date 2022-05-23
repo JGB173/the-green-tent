@@ -18,34 +18,17 @@ html {
     "footer footer footer footer";
 }
 
-header {
+.header {
     grid-area: header;
-    background-color: aqua;
+    background-image: url("../Images/the-green-tent-home-v2.jpg"); /*Location of the image */
+    background-position: center center; /*Background image is centered vertically and horizontally at all times */
+    background-repeat: no-repeat; /*Background image doesn't tile */
+    background-attachment: fixed; /*Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height*/
+    background-size: cover; /*This is what makes the background image rescale based on the container's size */
+    background-color: #464646;
+    height: 500px;
 }
 
-
-header {
-    /* Location of the image */
-    background-image: url(the-green-tent-pics/IMG_6364.jpg);
-    
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    
-    /* Background image doesn't tile */
-    background-repeat: no-repeat;
-    
-    /* Background image is fixed in the viewport so that it doesn't move when
-    the content's height is greater than the image's height */
-    background-attachment: fixed;
-    
-    /* This is what makes the background image rescale based
-    on the container's size */
-    background-size: cover;
-    
-    /* Set a background color that will be displayed
-    while the background image is loading */
-    background-color: #464646;
-    }
 
 main {
     grid-area: main;
@@ -56,35 +39,72 @@ footer {
     color: #fff; /* white */
     grid-area: footer;
     background-color: #5D6C43; /* dark green */
+    line-height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "copyright name social";
-
 }
 
 
 @media only screen and (max-width:550px){
-    .container{
+    .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
         "header"
         "main"
-        "footer"
+        "footer";
     }
+
+
+    footer {
+        line-height: 0px;
+        height: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "name"
+        "social"
+        "copyright";
+    }
+
+
+}
+
+h1, h2, h3, a {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.copyright {
+    grid-area: copyright;
+    position: relative;    
+}
+
+.copyright small {
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    padding-left: 5px;
+}
+
+.footer-name {
+    grid-area: name;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 125px;
 }
 
 
 /* social media icons styling */
 .fa {
-    padding: 20px;
+    padding: 15px;
     font-size: 50px;
-    width: 30px;
+    width: 15px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 3px 2px;
     border-radius: 50%;
   }
   

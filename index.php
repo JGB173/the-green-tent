@@ -25,9 +25,18 @@
 <body>
     <div class="container">
 
-        <header>Header</header>
+        <div class="header"></div>
+
         <main>Main</main>
         <footer>
+            <div class="copyright">      
+                <small>&copy; Copyright 2022, The Green Tent</small>
+            </div>
+
+            <span class="footer-name">
+                <h1>The Green Tent</h1>
+            </span>
+
             <div class="social">
               <h1>Follow Us</h1>
                 <a href="#" class="fa fa-facebook"></a>
