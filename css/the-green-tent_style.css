@@ -18,21 +18,130 @@ html {
     "footer footer footer footer";
 }
 
-.header {
+header {
+    color: #fff; /* white */
     grid-area: header;
-    background-image: url("../Images/the-green-tent-home-v2.jpg"); /*Location of the image */
+    background-image: url("../Images/the-green-tent-home-v3.jpg"); /*Location of the image */
     background-position: center center; /*Background image is centered vertically and horizontally at all times */
     background-repeat: no-repeat; /*Background image doesn't tile */
     background-attachment: fixed; /*Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height*/
     background-size: cover; /*This is what makes the background image rescale based on the container's size */
-    background-color: #464646;
-    height: 500px;
+    background-color: #464646; /* dark grey */
+    height: 550px;
 }
 
+/* nav styling */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff; /* white */
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* white */
+    margin: 5px;
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* end of nav styling */
+
+
+header .home-header-info {
+    float: left;
+    padding-left: 130px;
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+}
 
 main {
     grid-area: main;
     background-color: #fff; /* white */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.home-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "home-img-1 home-img-2"
+    "home-img-3 home-img-4";
+}
+
+.home-gallery-img {
+    width: auto;
+    height: 250px;
+    margin: 20px 20px 20px 20px;
+}
+
+#home-gallery-1 {
+    grid-area: home-img-1;
+}
+
+#home-gallery-2 {
+    grid-area: home-img-2;
+}
+
+#home-gallery-3 {
+    grid-area: home-img-3;
+}
+
+#home-gallery-4 {
+    grid-area: home-img-4;
 }
 
 footer {
@@ -47,8 +156,43 @@ footer {
     "copyright name social";
 }
 
+@media only screen and (max-width:1024px){
+    .nav-links {
+        width: 60%;
+    }
+}
 
-@media only screen and (max-width:550px){
+@media only screen and (max-width:768px){
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* nav styling mobile */
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 9vh;
+        background-color: #5D6C43; /* dark green */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(100%); /* moves nav off screen */
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* end of nav styling mobile */
+
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -71,9 +215,21 @@ footer {
     }
 
 
+    .home-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "home-img-1"
+        "home-img-2"
+        "home-img-3"
+        "home-img-4";
+    }
+
+
 }
 
-h1, h2, h3, a {
+h1, h2, h3, h4, a {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 .copyright {
@@ -93,7 +249,7 @@ h1, h2, h3, a {
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    line-height: 125px;
+    padding: 40px;
 }
 
 
@@ -114,17 +270,17 @@ h1, h2, h3, a {
   
 .fa-facebook {
     background: #3B5998;
-    color: white; 
+    color: #fff; /* white */
 }
 
 .fa-twitter {
     background: #55ACEE;
-    color: white;
+    color: #fff; /* white */
 }
 
 .fa-instagram {
   background: #125688;
-  color: white;
+  color: #fff; /* white */
 }
 
 .social {

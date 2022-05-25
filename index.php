@@ -25,17 +25,49 @@
 <body>
     <div class="container">
 
-        <div class="header"></div>
+        <header>
 
-        <main>Main</main>
+            <nav>
+               <div class="logo">
+                    <h4>The Green Tent</h4>
+               </div> 
+               <ul class="nav-links">
+                   <li><a href="">Home</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Availability</a></li>
+                   <li><a href="">Gallery</a></li>
+                   <li><a href="">Contact</a></li>
+               </ul>
+
+                <div class="burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </nav>
+
+            <div class="home-header-info">
+                A luxurious Mongolian-style yurt set in rural<br> 
+                Matakana within walking distance of the<br> 
+                vibrant village.
+            </div>
+        </header>
+
+        <main>
+            <h1>Gallery</h1>
+            <div class="home-gallery">
+                <img class="home-gallery-img" id="home-gallery-1" alt="Image of inside" src="Images/the-green-tent-home-v2.jpg">
+                <img class="home-gallery-img" id="home-gallery-2" alt="Image of deck" src="Images/the-green-tent-deck-v1.jpg">
+                <img class="home-gallery-img" id="home-gallery-3" alt="Image of deck" src="Images/the-green-tent-outside-v1.jpg">
+                <img class="home-gallery-img" id="home-gallery-4" alt="Image of kitchen" src="Images/the-green-tent-kitchen-v1.jpg">
+            </div>
+        </main>
         <footer>
             <div class="copyright">      
                 <small>&copy; Copyright 2022, The Green Tent</small>
             </div>
 
-            <span class="footer-name">
-                <h1>The Green Tent</h1>
-            </span>
+            <h1 class="footer-name">The Green Tent</h1>
 
             <div class="social">
               <h1>Follow Us</h1>
@@ -47,5 +79,7 @@
         
     </div> <!-- container -->
 
+    <!-- link to js -->
+   <script src="js/nav.js"></script>
 </body>
 </html>
