@@ -1,9 +1,12 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('nav-links');
+// This is the code from the video if I need to go back to it
+/* const hamburger = document.querySelector('.hamburger');
 
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-    });
-};
-navSlide();
+hamburger.addEventListener('click', function() {
+    this.classList.toggle('is-active');
+})*/
+
+// My code
+function myFunction() {
+    var element = document.getElementById("hamburger");
+    element.classList.toggle("is-active");
+ }

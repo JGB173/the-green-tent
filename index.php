@@ -28,28 +28,31 @@
         <header>
 
             <nav>
-               <div class="logo">
-                    <h4>The Green Tent</h4>
-               </div> 
-               <ul class="nav-links">
-                   <li><a href="">Home</a></li>
-                   <li><a href="">About</a></li>
-                   <li><a href="">Availability</a></li>
-                   <li><a href="">Gallery</a></li>
-                   <li><a href="">Contact</a></li>
-               </ul>
+                <div class="container-nav">
+                    <h1>The Green Tent</h1>
 
-                <div class="burger">
-                    <div class="line-1"></div>
-                    <div class="line-2"></div>
-                    <div class="line-3"></div>
+                    <div class="menu">
+                        <a href="#" class="is-active">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Availability</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+                    <button id="hamburger" class="hamburger" onclick="myFunction()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </nav>
 
             <div class="home-header-info">
+                <p>
                 A luxurious Mongolian-style yurt set in rural<br> 
                 Matakana within walking distance of the<br> 
                 vibrant village.
+                </p>
             </div>
         </header>
 
