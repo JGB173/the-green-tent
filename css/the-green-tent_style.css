@@ -18,10 +18,17 @@ html {
     "footer footer footer footer";
 }
 
-header {
+.home-page-bg-img {
+    background-image: url("../Images/the-green-tent-home-v4.jpg"); /*Location of the image */
+}
+
+.about-page-bg-img {
+    background-image: url("../Images/the-green-tent-couch-v1.jpg"); /*Location of the image */
+}
+
+header{
     color: #fff; /* white */
     grid-area: header;
-    background-image: url("../Images/the-green-tent-home-v4.jpg"); /*Location of the image */
     background-position: center center; /*Background image is centered vertically and horizontally at all times */
     background-repeat: no-repeat; /*Background image doesn't tile */
     background-attachment: fixed; /*Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height*/
@@ -143,8 +150,39 @@ nav {
     background-color: #5D6C43; /* dark green */
 }
 
-@media (min-width: 768px) {
+.mobile-nav {
+    position: fixed;
+    top: 0px;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #5D6C43; /* dark green */
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+@media (min-width: 778px) {
     .hamburger {
+        display: none;
+    }
+
+    .mobile-nav {
         display: none;
     }
 
@@ -211,7 +249,7 @@ footer {
 }
 
 
-@media only screen and (max-width:768px){
+@media (max-width: 778px) {
 
     body {
         overflow-x: hidden;
