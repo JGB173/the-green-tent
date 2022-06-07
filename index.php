@@ -12,7 +12,7 @@
                     <div class="menu">
                         <a href="index.php" class="is-active">Home</a>
                         <a href="about.php">About</a>
-                        <a href="#">Availability</a>
+                        <a href="availability.php">Availability</a>
                         <a href="#">Gallery</a>
                         <a href="#">Contact</a>
                     </div>
@@ -35,12 +35,11 @@
         </header>
 
         <nav class="mobile-nav">
-            <a href="index.php" class="is-active">Home</a>
+            <a href="index.php" class="is-active-mobile">Home</a>
             <a href="about.php">About</a>
             <a href="#">Availability</a>
             <a href="#">Gallery</a>
             <a href="#">Contact</a>
-
         </nav>
 
         <main>

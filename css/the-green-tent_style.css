@@ -80,15 +80,16 @@ nav {
 .hamburger {
     display: block;
     position: relative;
-    z-index: 1;
-
     user-select: none;
-
     appearance: none;
     border: none;
     outline: none;
     background: none;
     cursor: pointer;
+}
+
+.container-nav * {
+    z-index: 100;
 }
 
 .hamburger span {
@@ -126,7 +127,7 @@ nav {
 }
 
 .hamburger.is-active:hover span {
-    background-color: #5D6C43; /* dark green */
+    background-color: #2e3620; /* dark/grey green */
 }
 
 .menu {
@@ -152,7 +153,7 @@ nav {
 
 .mobile-nav {
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 100%;
     width: 100%;
     min-height: 100vh;
@@ -166,15 +167,23 @@ nav {
 .mobile-nav a {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 110px;
     margin: 0 auto 16px;
     text-align: center;
     padding: 12px 16px;
     text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 99px;
 }
 
 .mobile-nav.is-active {
     left: 0;
+}
+
+.is-active-mobile, .mobile-nav a:hover{
+    background-color: rgb(79, 92, 56); /* dark green/brown */
+    transition: 0.4s;
 }
 
 @media (min-width: 778px) {
@@ -189,8 +198,18 @@ nav {
     .menu {
         display: flex;
     }
+
 }
 
+.about-header {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+}
+
+.about-header h1 {
+    margin-top: 100px;
+}
 main {
     grid-area: main;
     background-color: #fff; /* white */
@@ -205,6 +224,7 @@ main h1 {
     margin-bottom: 0px;
 }
 
+/*home page main styling */
 .home-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -235,6 +255,95 @@ main h1 {
 #home-gallery-4 {
     grid-area: home-img-4;
 }
+
+@media (max-width: 778px) {
+    .home-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "home-img-1"
+        "home-img-2"
+        "home-img-3"
+        "home-img-4";
+    }
+}
+/* end of home page main styling */
+
+/*about page main styling */
+.about-page-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+    "placeholder1 p1 p1 placeholder2"
+    "placeholder1 p2 p2 placeholder2"
+    "info info rates rates"
+    "info-list info-list rates-list rates-list";
+}
+
+.about-page-main span {
+    margin: 20px 0 20px;
+}
+
+#about-page-paragraph-1 {
+    grid-area: p1;
+    text-align: left;
+}
+
+#about-page-paragraph-2 {
+    grid-area: p2;
+    text-align: left;
+}
+
+#info {
+    grid-area: info;   
+}
+
+.about-page-main ul {
+    font-size: 18px;
+}
+
+.about-page-main ul li {
+    margin: 5px;
+}
+
+#info-list {
+    grid-area: info-list;
+    text-align: left;
+    margin-left: 120px;
+}
+
+#rates {
+    grid-area: rates;
+}
+
+#rates-list {
+    grid-area: rates-list;
+    text-align: left;
+    margin-left: 120px;
+}
+
+@media (max-width: 778px) {
+    .about-page-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-template-areas: 
+        "p1"
+        "p2"
+        "info"
+        "info-list"
+        "rates"
+        "rates-list";
+    }
+
+    .about-page-main ul {
+        padding-left: 150px;
+    }
+}
+
+/* end of about page main styling */
 
 footer {
     color: #fff; /* white */
@@ -275,20 +384,6 @@ footer {
         "social"
         "copyright";
     }
-
-
-    .home-gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "home-img-1"
-        "home-img-2"
-        "home-img-3"
-        "home-img-4";
-    }
-
-
 }
 
 h1, h2, h3, h4, a {
