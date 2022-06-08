@@ -4,39 +4,15 @@
     <div class="container">
 
         <header class="about-page-bg-img">
+            
+            <?php include 'nav.php'; ?>
 
-            <nav>
-                <div class="container-nav">
-                    <h1>The Green Tent</h1>
-
-                    <div class="menu">
-                        <a href="index.php">Home</a>
-                        <a href="about.php" class="is-active">About</a>
-                        <a href="availability.php">Availability</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Contact</a>
-                    </div>
-
-                    <button id="hamburger" class="hamburger" onclick="myFunction()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </nav>
-
-            <span class="about-header">
+            <span class="header-title">
                 <h1>About</h1>
             </span>
         </header>   
 
-        <nav class="mobile-nav">
-            <a href="index.php">Home</a>
-            <a href="about.php" class="is-active-mobile">About</a>
-            <a href="availability.php">Availability</a>
-            <a href="gallery.php">Gallery</a>
-            <a href="contact.php">Contact</a>
-        </nav>
+        <?php include 'mobile-nav.php'; ?>
 
         <main>
             <h1>About the property</h1>

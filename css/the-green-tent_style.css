@@ -26,6 +26,18 @@ html {
     background-image: url("../Images/the-green-tent-couch-v1.jpg"); /*Location of the image */
 }
 
+.availability-page-bg-img {
+    background-image: url("../Images/the-green-tent-bed-v1.jpg"); /*Location of the image */
+}
+
+.gallery-page-bg-img {
+    background-image: url("../Images/the-green-tent-bath-v1.jpg"); /*Location of the image */
+}
+
+.contact-page-bg-img {
+    background-image: url("../Images/the-green-tent-kitchen-v1.jpg"); /*Location of the image */
+}
+
 header{
     color: #fff; /* white */
     grid-area: header;
@@ -201,13 +213,13 @@ nav {
 
 }
 
-.about-header {
+.header-title {
     display: block;
     text-align: center;
     font-size: 35px;
 }
 
-.about-header h1 {
+.header-title h1 {
     margin-top: 100px;
 }
 main {

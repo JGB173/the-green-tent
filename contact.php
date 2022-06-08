@@ -3,36 +3,16 @@
 <body>
     <div class="container">
 
-        <header class="home-page-bg-img">
+        <header class="contact-page-bg-img">
 
-            <nav>
-                <div class="container-nav">
-                    <h1>The Green Tent</h1>
+            <?php include 'nav.php'; ?>
 
-                    <div class="menu">
-                        <a href="index.php">Home</a>
-                        <a href="about.php">About</a>
-                        <a href="availability.php">Availability</a>
-                        <a href="gallery.php">Gallery</a>
-                        <a href="contact.php" class="is-active">Contact</a>
-                    </div>
-
-                    <button id="hamburger" class="hamburger" onclick="myFunction()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </nav>
+            <span class="header-title">
+                <h1>Contact</h1>
+            </span>
         </header>
 
-        <nav class="mobile-nav">
-            <a href="index.php">Home</a>
-            <a href="about.php">About</a>
-            <a href="availability.php">Availability</a>
-            <a href="gallery.php">Gallery</a>
-            <a href="contact.php" class="is-active-mobile">Contact</a>
-        </nav>
+            <?php include 'mobile-nav.php'; ?>
 
         <main>
             <h1>Check Availability</h1>

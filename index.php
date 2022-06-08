@@ -5,25 +5,7 @@
 
         <header class="home-page-bg-img">
 
-            <nav>
-                <div class="container-nav">
-                    <h1>The Green Tent</h1>
-
-                    <div class="menu">
-                        <a href="index.php" class="is-active">Home</a>
-                        <a href="about.php">About</a>
-                        <a href="availability.php">Availability</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Contact</a>
-                    </div>
-
-                    <button id="hamburger" class="hamburger" onclick="myFunction()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </nav>
+            <?php include 'nav.php'; ?>
 
             <div class="home-header-info">
                 <p>
@@ -34,13 +16,8 @@
             </div>
         </header>
 
-        <nav class="mobile-nav">
-            <a href="index.php" class="is-active-mobile">Home</a>
-            <a href="about.php">About</a>
-            <a href="#">Availability</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
-        </nav>
+        <?php include 'mobile-nav.php'; ?>
+
 
         <main>
             <h1>Gallery</h1>
