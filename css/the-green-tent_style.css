@@ -19,23 +19,23 @@ html {
 }
 
 .home-page-bg-img {
-    background-image: url("../Images/the-green-tent-home-v4.jpg"); /*Location of the image */
+    background-image: url("../Images/the-green-tent-home-v5.jpg"); /*Location of the image */
 }
 
 .about-page-bg-img {
-    background-image: url("../Images/the-green-tent-couch-v1.jpg"); /*Location of the image */
+    background-image: url("../Images/the-green-tent-couch-v2.jpg"); /*Location of the image */
 }
 
 .availability-page-bg-img {
-    background-image: url("../Images/the-green-tent-bed-v1.jpg"); /*Location of the image */
+    background-image: url("../Images/the-green-tent-bed-v2.jpg"); /*Location of the image */
 }
 
 .gallery-page-bg-img {
-    background-image: url("../Images/the-green-tent-bath-v1.jpg"); /*Location of the image */
+    background-image: url("../Images/the-green-tent-bath-v2.jpg"); /*Location of the image */
 }
 
 .contact-page-bg-img {
-    background-image: url("../Images/the-green-tent-kitchen-v1.jpg"); /*Location of the image */
+    background-image: url("../Images/the-green-tent-kitchen-v2.jpg"); /*Location of the image */
 }
 
 header{
