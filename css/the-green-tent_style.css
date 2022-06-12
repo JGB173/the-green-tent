@@ -357,6 +357,25 @@ main h1 {
 
 /* end of about page main styling */
 
+/* gallery page main styling */
+
+.gallery-page-main * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-gallery {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+
+
 footer {
     color: #fff; /* white */
     grid-area: footer;
@@ -387,14 +406,19 @@ footer {
 
 
     footer {
-        line-height: 0px;
-        height: 400px;
+        line-height: 50px;
+        height: 300px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
         "name"
         "social"
         "copyright";
+    }
+
+    .copyright, .footer-name, .social {
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -431,25 +455,27 @@ h1, h2, h3, h4, a {
     text-decoration: none;
     margin: 3px 2px;
     border-radius: 50%;
+    transition: 0.4s;
   }
   
 .fa:hover {
-    opacity: 0.7;
+    background: #fff; /* white */
+    color: #5D6C43; /* black */
 }
-  
+
 .fa-facebook {
-    background: #3B5998;
     color: #fff; /* white */
+    background-color: #3B5998; /* dark blue */
 }
 
 .fa-twitter {
-    background: #55ACEE;
     color: #fff; /* white */
+    background-color: #55ACEE; /* light blue */
 }
 
 .fa-instagram {
-  background: #125688;
-  color: #fff; /* white */
+    color: #fff; /* white */
+    background-color: #125688; /* blue */
 }
 
 .social {

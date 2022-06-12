@@ -18,7 +18,6 @@
 
         <?php include 'mobile-nav.php'; ?>
 
-
         <main>
             <h1>Gallery</h1>
             <div class="home-gallery">

@@ -13,8 +13,11 @@
 
         <?php include 'mobile-nav.php'; ?>
 
-        <main>
-            <h1>Check Availability</h1>
+        <main class="gallery-page-main">
+            <div class="container-gallery">
+                <div class="gallery">
+                </div>
+            </div>
         </main>
 
 <?php include 'bottom.php';?>

@@ -15,7 +15,7 @@
             <?php include 'mobile-nav.php'; ?>
 
         <main>
-            <h1>Check Availability</h1>
+            <h1>Contact Us</h1>
         </main>
 
 <?php include 'bottom.php';?>
