@@ -9,9 +9,9 @@
 
             <div class="home-header-info">
                 <p>
-                A luxurious Mongolian-style yurt set in rural<br> 
-                Matakana within walking distance of the<br> 
-                vibrant village.
+                    A luxurious Mongolian-style yurt set in rural<br> 
+                    Matakana within walking distance of the<br> 
+                    vibrant village.
                 </p>
             </div>
         </header>
