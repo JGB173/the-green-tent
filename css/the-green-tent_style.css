@@ -240,6 +240,7 @@ main h1 {
 
 /*home page main styling */
 .home-gallery {
+    margin: 20px 0 20px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -281,6 +282,16 @@ main h1 {
         "home-img-2"
         "home-img-3"
         "home-img-4";
+    }
+
+    .home-gallery-img {
+        width: 400px;
+        height: auto;
+        margin: 0;
+    }
+
+    #home-gallery-4 {
+        margin-top: 30px;
     }
 }
 /* end of home page main styling */
@@ -567,6 +578,11 @@ main h1 {
     border: 1px solid #000;
 }
 
+.inputBox input[type="date"] {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
 .inputBox textarea {
     padding: 10px;
     font-size: 1.1em;
@@ -588,6 +604,7 @@ main h1 {
     padding: 14px 15px;
     border-radius: 25px;
     transition: 0.7s;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .inputBox input[type="submit"]:hover {

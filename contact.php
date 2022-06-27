@@ -47,6 +47,17 @@
                                     </div>
                                 </div>
 
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Arrive</span>
+                                        <input type="date">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Depart</span>
+                                        <input type="date">
+                                    </div>
+                                </div>
+
                                 <div class="row100">
                                     <div class="inputBox">
                                         <span>Message</span>
