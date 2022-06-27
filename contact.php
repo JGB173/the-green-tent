@@ -82,13 +82,14 @@
                             <ul class="sci">
                                 <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
                                 <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                                 <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
                             </ul>
                         </div>
                     </div>
                     <!-- Map -->
-                    <div class="contact map"></div>
+                    <div class="contact map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12852.934973076095!2d174.71438686675543!3d-36.355116759757735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0cdb048e7cd525%3A0x6a4ed707ae581b8a!2sTongue%20Farm%20Road%2C%20Matakana%200985!5e0!3m2!1sen!2snz!4v1656284337658!5m2!1sen!2snz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </main>
