@@ -1,5 +1,24 @@
 <?php include 'head.php'; ?>
 
+<?php include"setup.php";
+    
+    $sql = "SELECT * FROM pages where id=1";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+        $row = $result->fetch_assoc();
+        #debugging print_r($row);
+        $title1=$row["title1"];
+        $para1=$row["para1"];
+        $image1=$row["img1"];
+      
+    } else {
+        echo "0 results";
+    }
+$conn->close();
+      
+    ?>
 <body>
     <div class="container">
 
@@ -15,7 +34,7 @@
         <?php include 'mobile-nav.php'; ?>
 
         <main>
-            <h1>About the property</h1>
+            <h1><?php print $title1; ?></h1>
             <div class="about-page-main"> 
                 <span id="about-page-paragraph-1">
                     A luxurious Mongolian-style yurt set in rural Matakana within walking distance of the vibrant village. Private & self-contained this access-friendly, chic retreat has everything you need to experience glamping at its finest from luxury linen to technology needs. A locally crafted kitchen & bathroom a step away across a covered deck. Outdoor bath, festoon lights & campfire add the extra touches for an unforgettable escape. Relax & unwind in this truly tranquil setting, you won't want to leave…
