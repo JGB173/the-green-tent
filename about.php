@@ -37,7 +37,7 @@ $conn->close();
             <h1><?php print $title1; ?></h1>
             <div class="about-page-main"> 
                 <span id="about-page-paragraph-1">
-                    A luxurious Mongolian-style yurt set in rural Matakana within walking distance of the vibrant village. Private & self-contained this access-friendly, chic retreat has everything you need to experience glamping at its finest from luxury linen to technology needs. A locally crafted kitchen & bathroom a step away across a covered deck. Outdoor bath, festoon lights & campfire add the extra touches for an unforgettable escape. Relax & unwind in this truly tranquil setting, you won't want to leave…
+                <?php print $para1; ?>                
                 </span>
 
                 <span id="about-page-paragraph-2">
