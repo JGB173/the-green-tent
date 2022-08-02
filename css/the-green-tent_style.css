@@ -721,6 +721,7 @@ main h1 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .calendar-container {
@@ -749,6 +750,7 @@ main h1 {
     padding: 0 2rem;
     text-align: center;
     text-shadow: 0 0.3rem 05rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0 0;
 }
 
 .month i {
@@ -813,9 +815,15 @@ main h1 {
     opacity: 0.5;
 }
 
-.today {
-    background-color: #5D6C43;
-    color: #fff;
+.prev:hover, .next:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.today { 
+    border-style: solid;
+    border-color: #5D6C43;
+    border-width: 5px;
 }
 
 /* end of availability page styling */
@@ -927,3 +935,33 @@ h1, h2, h3, h4, a {
     display: block;
     text-align: center;
 }
+
+/* admin page styling*/
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  /* end of admin page styling */
+
+  
