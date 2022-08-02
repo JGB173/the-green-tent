@@ -826,6 +826,54 @@ main h1 {
     border-width: 5px;
 }
 
+@media (max-width: 778px) {
+
+    .calendar-container {
+        height: 120vh;
+    }
+
+    .calendar {
+        width: 30rem;
+        height: 34rem;
+    }
+
+    .month {
+        height: 10rem;
+    }
+
+    .month i {
+        font-size: 1.5rem;
+    }
+
+    .month h1{
+        font-size: 3rem;
+    }
+
+    .month p {
+        font-size: 1.5rem;
+    }
+
+    .weekdays {
+        padding: 0 0.2rem;
+    }
+
+    .weekdays div {
+        font-size: 1rem;
+        width: calc(29.6rem/7);
+    }
+
+    .days div {
+        font-size: 1rem;  
+        margin: 0; 
+        width: calc(29.6rem/7);
+        height: 3.5rem;
+    }
+
+    .today {
+        border-width: 3px;
+    }
+}
+
 /* end of availability page styling */
 
 footer {
