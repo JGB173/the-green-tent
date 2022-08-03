@@ -12,7 +12,16 @@
         $title1=$row["title1"];
         $para1=$row["para1"];
         $image1=$row["img1"];
-      
+        $title2=$row["title2"];
+        $para2=$row["para2"];
+        $image2=$row["img2"];
+        $title3=$row["title3"];
+        $para3=$row["para3"];
+        $image3=$row["img3"];
+        $title4=$row["title4"];
+        $para4=$row["para4"];
+        $image4=$row["img4"];
+
     } else {
         echo "0 results";
     }
@@ -37,31 +46,25 @@ $conn->close();
             <h1><?php print $title1; ?></h1>
             <div class="about-page-main"> 
                 <span id="about-page-paragraph-1">
-                <?php print $para1; ?>                
+                    <?php print $para1; ?>                
                 </span>
 
                 <span id="about-page-paragraph-2">
-                    The Green Tent is located on the Matakana cycleway close to our vibrant village with our famous market, great dining options, shops & boutique cinema The Matakana Coast is a fantastic area to visit with it's stunning beaches, regional parks, and surf spots - make it your next adventure Surrounded by farmland The Green Tent is super private and relaxing, make yourself at home and enjoy the peaceful rural setting
+                    <?php print $para2; ?>
                 </span>
 
-                <h1 id="info">Info</h1>
+                <h1 id="info">
+                <?php print $title2; ?>
+                </h1>
                     <ul id="info-list">
-                        <li>Air Conditioning</li>
-                        <li>Bathtub</li>
-                        <li>Bedrooms: 1</li>
-                        <li>Beds: 1</li>
-                        <li>Bathroom: 1</li>
-                        <li>Kitchen</li>
-                        <li>Wi-Fi</li>
-                        <li>Tv</li>
-                        <li>Dedicated Workspace</li>
+                        <?php print $para3; ?>
                     </ul>
 
-                <h1 id="rates">Rates</h1>
+                <h1 id="rates">
+                <?php print $title3; ?>
+                </h1>
                     <ul id="rates-list">
-                        <li>MIDWEEK (SUNDAY-THURSDAY)<br>One night stay $270 + $60 cleaning fee </li>
-                        <li>Two or more nights mid week<br>$260 per night + $60 cleaning fee</li>
-                        <li>WEEKENDS<br>2 night minimum stay $580</li>
+                        <?php print $para4; ?>
                     </ul>
             </div>
         </main>
