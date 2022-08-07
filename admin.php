@@ -57,7 +57,9 @@
                         $image4=$row["img4"];
                       ?>
                 <tr>
-                    <td><?php print $id; ?></td>
+                    <td><?php print $id; ?>
+                    <a href='edit_page.php?id=<?php print $id; ?>'>Edit</a>
+                    </td>
                     <td><?php print $title1; ?></td>
                     <td><?php print $para1; ?></td>
                     <td><?php print $image1; ?></td>
