@@ -26,8 +26,10 @@
 				</label>
 				<input type="email" name="email" placeholder="Email" id="email" required>
 				<?php
+				if (isset ($_SESSION['erroruser'])) {
 				print($_SESSION['erroruser']); 
-				
+				$_SESSION['erroruser']=""; 
+				}
 				?>
 				
 				<input type="submit" value="Register">

@@ -27,7 +27,8 @@
 				$_SESSION['message']=""; 
 				}
 				?>
-				<a href="register.html">Create Login</a>
+		
+				<a href="registering.php">Create Login</a>
 				<input type="submit" value="Login">
 			</form>
 		</div>
