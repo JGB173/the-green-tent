@@ -947,35 +947,30 @@ h1, h2, h3, h4, a {
 
 
 /* social media icons styling */
-.fa {
-    padding: 15px;
-    font-size: 50px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin: 3px 2px;
-    border-radius: 50%;
-    transition: 0.4s;
-  }
-  
-.fa:hover {
-    background: #fff; /* white */
-    color: #5D6C43; /* black */
+.fa-brands {
+    font-size: 30px;
+    margin-left: 10px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 99px;
+    transition: 0.5s;
+}
+
+.fa-brands:hover {
+    color: #5D6C43;
+    background-color: #fff;
 }
 
 .fa-facebook {
-    color: #fff; /* white */
-    background-color: #3B5998; /* dark blue */
+    background-color: #3B5998;
 }
 
 .fa-twitter {
-    color: #fff; /* white */
-    background-color: #55ACEE; /* light blue */
+    background-color: #55ACEE;
 }
 
 .fa-instagram {
-    color: #fff; /* white */
-    background-color: #125688; /* blue */
+    background-color: #125688;
 }
 
 .social {

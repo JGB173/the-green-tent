@@ -26,12 +26,11 @@
 				</label>
 				<input type="email" name="email" placeholder="Email" id="email" required>
 				<?php
-				if (isset ($_SESSION['erroruser'])) {
-				print($_SESSION['erroruser']); 
-				$_SESSION['erroruser']=""; 
+				if (isset ($_SESSION['user'])) {
+				print($_SESSION['user']); 
+				$_SESSION['user']=""; 
 				}
 				?>
-				
 				<input type="submit" value="Register">
 			</form>
 		</div>
