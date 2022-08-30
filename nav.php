@@ -7,6 +7,7 @@
             <a href="availability.php">Availability</a>
             <a href="gallery.php">Gallery</a>
             <a href="contact.php">Contact</a>
+            <a href="phplogin/login.php">Login</a>
         </div>
 
         <button id="hamburger" class="hamburger" onclick="myFunction()">

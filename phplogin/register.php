@@ -44,10 +44,10 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 	// Store the result so we can check if the account exists in the database.
 	if ($stmt->num_rows > 0) {
 		// Username already exists
+        $_SESSION['user'] = "Incorrect username and/or password!";
         header('Location: registering.php');
 
-        $_SESSION['user'] = "Incorrect username and/or password!";
-	} else {
+    } else {
         // Username doesnt exists, insert new account
         if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {            // We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
             $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
