@@ -14,6 +14,7 @@
     <title>The Green Tent</title>
     <!-- link to css -->
     <link href="css/the-green-tent_style.css" rel="stylesheet">
+    <link href="css/calendar.css" type="text/css" rel="stylesheet"/>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <!-- link to social media icons -->

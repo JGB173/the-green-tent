@@ -1,6 +1,6 @@
 <?php
 
-class BookableCell
+class bookablecell
 {
     /**
      * @var Booking
@@ -10,7 +10,7 @@ class BookableCell
     private $currentURL;
  
     /**
-     * BookableCell constructor.
+     * bookablecell constructor.
      * @param $booking
      */
     public function __construct(Booking $booking)
@@ -86,17 +86,17 @@ class BookableCell
         $date = new DateTimeImmutable($date);
         $this->booking->add($date);
     }
- 
-    private function bookingForm($date)
+ // booking button
+    private function bookingForm($date) 
     {
         return
             '<form  method="post" action="' . $this->currentURL . '">' .
             '<input type="hidden" name="add" />' .
             '<input type="hidden" name="date" value="' . $date . '" />' .
             '<input class="submit" type="submit" value="Book" />' .
-            '</form>';
-    }
- 
+            '</form>'; 
+    } 
+  // delete button
     private function deleteForm($id)
     {
         return

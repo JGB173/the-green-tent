@@ -6,7 +6,7 @@
 <?php
 include 'Calendar.php';
 include 'Booking.php';
-include 'BookableCell.php';
+include 'bookablecell.php';
  
  
 $booking = new Booking(
