@@ -9,7 +9,6 @@
                 <h1>Follow Us</h1>
 
                 <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
             </div>
         </footer>
