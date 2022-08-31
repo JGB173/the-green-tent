@@ -29,11 +29,8 @@ $stmt->close();
 	<head>
 		<meta charset="utf-8">
 		<title>Profile Page</title>
-<<<<<<< HEAD
 		<link href="../css/login-style.css" rel="stylesheet" type="text/css">
-=======
 		<link href="login-style.css" rel="stylesheet" type="text/css">
->>>>>>> e74364b41455c8074aea1344d194885f1c80b0be
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body class="loggedin">

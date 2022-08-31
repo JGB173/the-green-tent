@@ -23,45 +23,45 @@
                     <!-- Form -->
                     <div class="contact form">
                         <h3>Send a Message</h3>
-                        <form>
+                        <form action="contact_action_page.php" method="post">
                             <div class="formBox">
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>First Name</span>
-                                        <input type="text" placeholder="John">
+                                        <input type="text" placeholder="John" id="fname" name="fname">
                                     </div>
                                     <div class="inputBox">
                                         <span>Last Name</span>
-                                        <input type="text" placeholder="Doe">
+                                        <input type="text" placeholder="Doe" id="lname" name="lname">
                                     </div>
                                 </div>
 
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Email</span>
-                                        <input type="text" placeholder="johndoe@email.com">
+                                        <input type="text" placeholder="johndoe@email.com" id="email" name="email">
                                     </div>
                                     <div class="inputBox">
                                         <span>Mobile</span>
-                                        <input type="text" placeholder="+91 987 654 3210">
+                                        <input type="text" placeholder="+91 987 654 3210" id="phonenum" name="phonenum">
                                     </div>
                                 </div>
 
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Arrive</span>
-                                        <input type="date">
+                                        <input type="date" id="arrive" name="arrive">
                                     </div>
                                     <div class="inputBox">
                                         <span>Depart</span>
-                                        <input type="date">
+                                        <input type="date" id="depart" name="depart">
                                     </div>
                                 </div>
 
                                 <div class="row100">
                                     <div class="inputBox">
                                         <span>Message</span>
-                                        <textarea placeholder="Write your message here..."></textarea>
+                                        <textarea placeholder="Write your message here..." id="message" name="message"></textarea>
                                     </div>
                                 </div>
 

@@ -265,9 +265,9 @@ class Calendar
      *
      * @param number
      * @param number
-     * @return              number
-     * @author              The-Di-Lab <thedilab@gmail.com>
-     * @access              private
+     * @return number
+     * @author The-Di-Lab <thedilab@gmail.com>
+     * @access private
      */
     private function _daysInMonth($month = null, $year = null)
     {
