@@ -29,7 +29,6 @@ mysqli_close($conn);
 print_r($booking_date);
 
 
-
 ?>
 
 <body>
@@ -48,7 +47,7 @@ print_r($booking_date);
 
         <tr>
 			<td>Hello, <?=$_SESSION['name']?> your current bookings are:</td>
-			<td><?=$_SESSION['booking_date']?></td>
+			<td><?$booking_date?></td>
 		</tr>
 
     <div class="calendar">

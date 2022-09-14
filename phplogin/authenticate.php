@@ -30,7 +30,7 @@ if ($stmt = $con->prepare('SELECT id, password, admin FROM accounts WHERE userna
         $stmt->fetch();
 
         if ( $admin == 1) { 
-            header('Location: ../edit_page.php');
+            header('Location: ../admin.php');
         }
 
 

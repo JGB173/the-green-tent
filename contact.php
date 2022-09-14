@@ -46,18 +46,6 @@
                                         <input type="text" placeholder="+91 987 654 3210" id="phonenum" name="phonenum">
                                     </div>
                                 </div>
-
-                                <div class="row50">
-                                    <div class="inputBox">
-                                        <span>Arrive</span>
-                                        <input type="date" id="arrive" name="arrive">
-                                    </div>
-                                    <div class="inputBox">
-                                        <span>Depart</span>
-                                        <input type="date" id="depart" name="depart">
-                                    </div>
-                                </div>
-
                                 <div class="row100">
                                     <div class="inputBox">
                                         <span>Message</span>
