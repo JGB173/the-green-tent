@@ -8,8 +8,8 @@
             <div class="social">
                 <h1>Follow Us</h1>
 
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.facebook.com/thegreententmatakana"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thegreententmatakana/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </footer>
         

@@ -78,7 +78,9 @@ class bookablecell
  
     private function deleteBooking($id)
     {
+        
         $this->booking->delete($id);
+        
     }
  
     private function addBooking($date)
@@ -86,6 +88,7 @@ class bookablecell
         $date = new DateTimeImmutable($date);
         $this->booking->add($date);
     }
+
  // booking button
     private function bookingForm($date) 
     {

@@ -802,7 +802,10 @@ h1, h2, h3, h4, a {
     padding: 10px;
     border-radius: 99px;
     transition: 0.5s;
+    color: #fff;
+
 }
+
 
 .fa-brands:hover {
     color: #5D6C43;
