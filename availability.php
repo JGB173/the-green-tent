@@ -9,8 +9,9 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 
+
 // write query
-$sql = 'SELECT user_id, booking_date FROM bookings where user_id = 8';
+$sql = 'SELECT user_id, booking_date FROM bookings where user_id = '.$_SESSION['id'].'';
 
 
 // make query & get result
