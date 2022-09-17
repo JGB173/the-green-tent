@@ -30,7 +30,13 @@ if ($stmt = $con->prepare('SELECT id, password, admin FROM accounts WHERE userna
         $stmt->fetch();
 
         if ( $admin == 1) { 
+            session_regenerate_id();
+            $_SESSION['loggedin'] = TRUE;
+            $_SESSION['name'] = $_POST['username'];
+            $_SESSION['id'] = $id;
+            $_SESSION['admin'] = $admin;
             header('Location: ../admin.php');
+            
         }
 
 

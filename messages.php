@@ -1,6 +1,18 @@
-<?php include 'head.php'; ?>
+<?php 
+include 'head.php';
 
-<?php include"setup.php"; ?>
+session_start();
+
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: phplogin/login.php');
+}
+
+if ($_SESSION['admin'] <> 1) {
+    header('Location: index.php');
+	
+}
+
+?>
 
 <body>
     <div class="container">

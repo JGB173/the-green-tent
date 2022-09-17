@@ -39,17 +39,17 @@
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Email</span>
-                                        <input type="text" placeholder="johndoe@email.com" id="email" name="email">
+                                        <input type="email" placeholder="johndoe@email.com" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="no capital letters, have an @ with text before and after, have a . at the end">
                                     </div>
                                     <div class="inputBox">
                                         <span>Mobile</span>
-                                        <input type="text" placeholder="+91 987 654 3210" id="phonenum" name="phonenum">
+                                        <input type="tel" placeholder="123-456-7890" id="phonenum" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
                                     </div>
                                 </div>
                                 <div class="row100">
                                     <div class="inputBox">
                                         <span>Message</span>
-                                        <textarea placeholder="Write your message here..." id="message" name="message"></textarea>
+                                        <textarea placeholder="Write your message here..." id="message" name="message" pattern=".{5,}"></textarea>
                                     </div>
                                 </div>
 
@@ -79,8 +79,8 @@
                             </div>
                             <!-- social media icons -->
                             <ul class="sci">
-                                <li><a href="https://www.facebook.com/thegreententmatakana""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                                <li><a href="https://www.instagram.com/thegreententmatakana/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="https://www.facebook.com/thegreententmatakana" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                <li><a href="https://www.instagram.com/thegreententmatakana/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
                             </ul>
                         </div>
                     </div>

@@ -8,6 +8,7 @@
             <a href="gallery.php">Gallery</a>
             <a href="contact.php">Contact</a>
             <a href="phplogin/login.php">Login</a>
+            <a href="phplogin/logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
         </div>
 
         <button id="hamburger" class="hamburger" onclick="myFunction()">

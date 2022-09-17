@@ -24,6 +24,17 @@ body {
     padding: 20px 0 20px 0;
     border-bottom: 1px solid #dee0e4;
 }
+
+.cancel {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.cancel a {
+    text-decoration: none;
+    color: #5D6C43;
+}
+
 .register form {
     display: flex;
     flex-wrap: wrap;

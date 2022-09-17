@@ -25,6 +25,9 @@
 					<i class="fas fa-envelope"></i>
 				</label>
 				<input type="email" name="email" placeholder="Email" id="email" required>
+				<div class="cancel">
+					<a href="login.php">Cancel</a>
+				</div>
 				<?php
 				if (isset ($_SESSION['user'])) {
 				print($_SESSION['user']); 

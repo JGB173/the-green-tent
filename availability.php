@@ -28,7 +28,6 @@ mysqli_close($conn);
 
 print_r($booking_date);
 
-
 ?>
 
 <body>
