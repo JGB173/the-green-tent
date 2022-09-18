@@ -29,6 +29,8 @@
                 <img class="gallery-img" id="gallery-12" alt="Image of table" src="Images/the-green-tent-gallery-table-closeup-v1.jpg">
                 <img class="gallery-img" id="gallery-13" alt="Image of yurt from far away" src="Images/the-green-tent-longshot-v1.jpg">
             </div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
         </main>
 
 <?php include 'bottom.php';?>

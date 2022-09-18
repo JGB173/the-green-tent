@@ -49,6 +49,7 @@ if ($stmt = $con->prepare('SELECT id, password, admin FROM accounts WHERE userna
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
+            $_SESSION['admin'] = $admin;
             header('Location: ../availability.php');
         } 
 

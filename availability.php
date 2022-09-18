@@ -15,7 +15,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 
 // write query
-$sql = 'SELECT user_id, booking_date FROM bookings where user_id = '.$_SESSION['id'].'';
+$sql = 'SELECT booking_date FROM bookings where user_id = '.$_SESSION['id'].'';
 
 
 // make query & get result
@@ -29,8 +29,6 @@ mysqli_free_result($result);
 
 // close connection
 mysqli_close($conn);
-
-print_r($booking_date);
 
 ?>
 
@@ -50,7 +48,7 @@ print_r($booking_date);
 
         <tr>
 			<td>Hello, <?=$_SESSION['name']?> your current bookings are:</td>
-			<td><?$booking_date?></td>
+			<td><?php print_r(array_values($booking_date));?></td>
 		</tr>
 
     <div class="calendar">
