@@ -35,8 +35,15 @@ $sql = "INSERT INTO messages (fname, lname, email, phonenum, message)
 VALUES ('$fname', '$lname', '$email', '$phonenum', '$message')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
+
+    echo '<script type="text/javascript">'; 
+    echo 'alert("Thank you for your message!");'; 
+    echo 'window.location.href = "contact.php";';
+    echo '</script>';	
+} 
+
+
+else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 

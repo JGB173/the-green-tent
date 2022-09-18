@@ -101,12 +101,12 @@ class bookablecell
     } 
   // delete button
     private function deleteForm($id)
-    {
+    {/*
         return
             '<form onsubmit="return confirm(\'Are you sure to cancel?\');" method="post" action="' . $this->currentURL . '">' .
             '<input type="hidden" name="delete" />' .
             '<input type="hidden" name="id" value="' . $id . '" />' .
             '<input class="submit" type="submit" value="Delete" />' .
-            '</form>';
+            '</form>';*/
     }
 }

@@ -18,5 +18,6 @@
     <!-- link to js -->
    <script src="js/nav.js"></script>
    <script src="js/calendar.js"></script>
+   <script src="js/scroll.js"></script>
 </body>
 </html>

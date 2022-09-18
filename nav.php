@@ -1,6 +1,6 @@
 <nav>
     <div class="container-nav">
-        <h1>The Green Tent</h1>
+        <img src="Images/the-green-tent-logo.png" class="logo">
         <div class="menu">
             <a href="index.php">Home</a>
             <a href="about.php">About</a>
