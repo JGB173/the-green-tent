@@ -9,7 +9,6 @@ if (!isset($_SESSION['loggedin'])) {
 
 if ($_SESSION['admin'] <> 1) {
     header('Location: index.php');
-	
 }
 
 ?>

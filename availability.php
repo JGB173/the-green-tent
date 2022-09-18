@@ -5,7 +5,11 @@ include 'head.php';
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: phplogin/login.php');
+    echo '<script type="text/javascript">'; 
+    echo 'alert("Please login to view the availability page.");'; 
+    echo 'window.location.href = "phplogin/login.php";';
+    echo '</script>';
+
 	exit;
 }
 
