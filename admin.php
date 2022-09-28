@@ -1,5 +1,6 @@
 <?php 
 include 'head.php';
+include 'setup.php';
 
 session_start();
 
@@ -20,15 +21,12 @@ if ($_SESSION['admin'] <> 1) {
 
         <header class="availability-page-bg-img">
             
-            <?php include 'nav.php'; ?>
+            <?php include 'admin-nav.php'; ?>
 
             <span class="header-title">
                 <h1>Admin</h1>
             </span>
         </header>   
-
-        <?php include 'mobile-nav.php'; ?>
-
         <main>
             <table id="dbtable">
                 <tr>
