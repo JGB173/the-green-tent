@@ -1,6 +1,6 @@
-<?php include 'head.php'; ?>
+<?php include 'head.php';
 
-<?php include"setup.php";
+include "setup.php";
     
     $sql = "SELECT * FROM pages where id=1";
     $result = $conn->query($sql);

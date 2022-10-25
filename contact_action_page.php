@@ -19,12 +19,6 @@ if (empty($_POST['fname']) || empty($_POST['lname']) || empty($_POST['email']) |
 	exit;
 }
 
-
-
-
-
-
-
 $fname = $_POST["fname"];
 $lname = $_POST["lname"];
 $email = $_POST["email"];

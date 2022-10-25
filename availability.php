@@ -30,6 +30,7 @@ mysqli_free_result($result);
 // close connection
 mysqli_close($conn);
 
+print($_SESSION['id']);
 ?>
 
 <body>
