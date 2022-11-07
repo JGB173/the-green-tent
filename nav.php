@@ -1,3 +1,5 @@
+
+
 <nav>
     <div class="container-nav">
         <img src="Images/the-green-tent-logo.png" class="logo">
@@ -7,8 +9,19 @@
             <a href="availability.php">Availability</a>
             <a href="gallery.php">Gallery</a>
             <a href="contact.php">Contact</a>
+            <?php 
+            if(!isset($_SESSION['loggedin'])){?>
             <a href="phplogin/login.php">Login</a>
-            <a href="phplogin/logout.php"><i class="fas fa-sign-out-alt"></i></a>
+            <?php }
+
+             else
+             {
+            ?>          
+            <a href="phplogin/logout.php" class="logout"><i class="fas fa-sign-out-alt"></i></a>
+            <?php 
+                } 
+            ?>
+            
         </div>
 
         <button id="hamburger" class="hamburger" onclick="myFunction()">

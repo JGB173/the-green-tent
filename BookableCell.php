@@ -91,13 +91,14 @@ class bookablecell
 
  // booking button
     private function bookingForm($date) 
-    {
+    {/*
         return
             '<form  method="post" action="' . $this->currentURL . '">' .
             '<input type="hidden" name="add" />' .
             '<input type="hidden" name="date" value="' . $date . '" />' .
             '<input class="submit" type="submit" value="Book" />' .
             '</form>'; 
+            */
     } 
   // delete button
     private function deleteForm($id)

@@ -13,7 +13,6 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 
-
 // write query
 $sql = 'SELECT booking_date FROM bookings where user_id = '.$_SESSION['id'].'';
 
@@ -29,8 +28,6 @@ mysqli_free_result($result);
 
 // close connection
 mysqli_close($conn);
-
-print($_SESSION['id']);
 ?>
 
 <body>
@@ -48,9 +45,30 @@ print($_SESSION['id']);
 
 
         <tr>
-			<td>Hello, <?=$_SESSION['name']?> your current bookings are:</td>
-			<td><?php print_r(array_values($booking_date));?></td>
-		</tr>
+			<td>Hello, <?=$_SESSION['name']?> your current bookings are: </td>
+            <td><?php print_r(array_values($booking_date));?></td>		
+	
+        </tr>
+
+        <form action="availability_action_page.php" method="post">
+                            <div class="formBox">
+                                <div class="row50">
+                                    <div class="inputdate">
+                                        <span>Arrive</span>
+                                        <input type="date" placeholder="John" id="arrive" name="arrive">
+                                    </div>
+                                    <div class="inputdate">
+                                        <span>Depart</span>
+                                        <input type="date" placeholder="Doe" id="depart" name="depart">
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
 
     <div class="calendar">
         <?php

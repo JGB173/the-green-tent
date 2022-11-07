@@ -752,6 +752,35 @@ main h1 {
 
 /* availability page styling */
 
+.inputdate {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+.formBox .row100 .inputdate {
+    width: 100%;
+}
+
+.inputdate span {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputdate input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.inputdate input[type="date"] {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
 .calendar {
     padding-bottom: 20px;
 }
