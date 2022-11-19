@@ -18,7 +18,7 @@ if ( !isset($_POST['username'], $_POST['password']) ) {
 	exit('Please fill both the username and password fields!');
 }
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $con->prepare('SELECT id, password, admin FROM accounts WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT user_id, password, admin FROM accounts WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
@@ -26,14 +26,14 @@ if ($stmt = $con->prepare('SELECT id, password, admin FROM accounts WHERE userna
 	$stmt->store_result();
     
     if ($stmt->num_rows > 0) {
-        $stmt->bind_result($id, $password, $admin);
+        $stmt->bind_result($user_id, $password, $admin);
         $stmt->fetch();
 
         if ( $admin == 1) { 
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
-            $_SESSION['id'] = $id;
+            $_SESSION['id'] = $user_id;
             $_SESSION['admin'] = $admin;
             header('Location: ../admin.php');
             
@@ -48,7 +48,7 @@ if ($stmt = $con->prepare('SELECT id, password, admin FROM accounts WHERE userna
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
-            $_SESSION['id'] = $id;
+            $_SESSION['id'] = $user_id;
             $_SESSION['admin'] = $admin;
             header('Location: ../availability.php');
         } 

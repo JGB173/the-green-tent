@@ -12,4 +12,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 //echo "Connected successfully to $dbname";  
+
+$sql = "DELETE FROM bookings WHERE booking_date < CURDATE()";
+$result = $conn->query($sql);
+
 ?>

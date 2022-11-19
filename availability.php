@@ -13,21 +13,7 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 
-// write query
-$sql = 'SELECT booking_date FROM bookings where user_id = '.$_SESSION['id'].'';
 
-
-// make query & get result
-$result = mysqli_query($conn, $sql);
-
-// fetch the resulting rows as an array
-$booking_date = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// free result from memory
-mysqli_free_result($result);
-
-// close connection
-mysqli_close($conn);
 ?>
 
 <body>
@@ -41,14 +27,29 @@ mysqli_close($conn);
             </span>
         </header>
         <?php include 'mobile-nav.php'; ?>
-     
-
-
-        <tr>
-			<td>Hello, <?=$_SESSION['name']?> your current bookings are: </td>
-            <td><?php print_r(array_values($booking_date));?></td>		
-	
-        </tr>
+        <table id="bookings-table">
+                <tr>
+                    <th>Hello, <?=$_SESSION['name']?> your current bookings are:</th>
+                </tr>
+                <?php 
+                    $sql = 'SELECT booking_date FROM bookings where user_id = '.$_SESSION['id'].'';
+                    $result = $conn->query($sql);
+                
+                    if ($result->num_rows > 0) {
+                        // output data of each row
+                        while($row = $result->fetch_assoc()) {
+                        #debugging print_r($row);
+                        $booking_date=$row["booking_date"];
+                      ?>
+                <tr>
+                    <td><?php print $booking_date; ?></td>
+                </tr>
+                <?php
+                    } 
+                    } 
+                $conn->close();
+                ?>
+            </table>
 
         <form action="availability_action_page.php" method="post">
                             <div class="formBox">

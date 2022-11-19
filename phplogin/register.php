@@ -23,7 +23,7 @@ if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['emai
 }
 
 // We need to check if the account with that username exists.
-if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT user_id, password FROM accounts WHERE username = ?')) {
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         exit('Email is not valid!');
     }
