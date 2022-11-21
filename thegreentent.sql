@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2022 at 10:11 PM
+-- Generation Time: Nov 21, 2022 at 02:27 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `accounts` (
-  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -40,11 +40,13 @@ CREATE TABLE `accounts` (
 -- Dumping data for table `accounts`
 --
 
-INSERT INTO `accounts` (`id`, `username`, `password`, `email`, `activation_code`, `admin`) VALUES
+INSERT INTO `accounts` (`user_id`, `username`, `password`, `email`, `activation_code`, `admin`) VALUES
 (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com', '', 0),
 (8, 'jb522', '$2y$10$VuswpSsKAOPj.at12.q1H.bNxDUW0r8Lx346c0SpRajrLav/2obBS', 'jb522@mahurangi.school.nz', '6302a507ae197', 0),
-(9, 'admin', '$2y$10$tN/EviIDsw5gIkPpzgiQZeKmgnup2MJGRMLnkgwZ7s8C2UqOAvdka', 'stay@thegreentent.co.nz', '6321517d12ffd', 1),
-(11, 'JGB', '$2y$10$7anXcnzD9h5RU296tvoh8u9cnMWEfUQ2uNVcVybDyKbf9vcCBaxLS', 'jgburgess173@gmail.com', '63255ab76f51e', 0);
+(11, 'JGB', '$2y$10$7anXcnzD9h5RU296tvoh8u9cnMWEfUQ2uNVcVybDyKbf9vcCBaxLS', 'jgburgess173@gmail.com', '63255ab76f51e', 0),
+(12, 'josh', '$2y$10$9KWp4JrIzwh7bHgR5Un7zO9xk/9A9rNgL3/4OiA14PpyyaHH/KXK.', 'jb522@mahurangi.school.nz', '635867ff9f914', 0),
+(13, 'test2', '$2y$10$2MxBY0DOrKc9Bopy4N2ABOebM/2DcMxzYetXui7r/I1iqGRGtciK2', 'test@gmail.com', '63586a596a2e5', 0),
+(14, 'admin', '$2y$10$a03qn/AfsbMXjKAiGxy3cOtxXpM8UXpuMeX3bArpDv/l59dBfou1q', 'stay@thegreentent.co.nz', '63599411654a1', 1);
 
 -- --------------------------------------------------------
 
@@ -63,12 +65,12 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`id`, `user_id`, `booking_date`) VALUES
-(89, 8, '2022-09-08'),
-(157, 8, '2022-09-03'),
-(159, 11, '2022-09-14'),
-(160, NULL, '2022-09-16'),
-(161, NULL, '2022-09-16'),
-(162, NULL, '2022-09-16');
+(348, 11, '2022-11-26'),
+(349, 11, '2022-11-27'),
+(362, 8, '2022-11-22'),
+(363, 8, '2022-11-23'),
+(364, 8, '2022-11-24'),
+(365, 8, '2022-11-25');
 
 -- --------------------------------------------------------
 
@@ -91,7 +93,9 @@ CREATE TABLE `messages` (
 
 INSERT INTO `messages` (`id`, `fname`, `lname`, `email`, `phonenum`, `message`) VALUES
 (1, 'Joshua', 'Burgess', 'JGBurgess173@gmail.com', '0274902590', 'Hello world'),
-(7, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test');
+(7, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test'),
+(8, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test'),
+(9, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test');
 
 -- --------------------------------------------------------
 
@@ -121,7 +125,7 @@ CREATE TABLE `pages` (
 
 INSERT INTO `pages` (`id`, `title1`, `para1`, `img1`, `title2`, `para2`, `img2`, `title3`, `para3`, `img3`, `title4`, `para4`, `img4`) VALUES
 (1, 'About the property', 'A luxurious Mongolian-style yurt set in rural Matakana within walking distance of the vibrant village. Private & self-contained this access-friendly, chic retreat has everything you need to experience glamping at its finest from luxury linen to technology needs. A locally crafted kitchen & bathroom a step away across a covered deck. Outdoor bath, festoon lights & campfire add the extra touches for an unforgettable escape. Relax & unwind in this truly tranquil setting, you won\'t want to leave…\r\n', 'the-green-tent-couch-v2.jpg', 'Info', 'The Green Tent is located on the Matakana cycleway close to our vibrant village with our famous market, great dining options, shops & boutique cinema The Matakana Coast is a fantastic area to visit with it\'s stunning beaches, regional parks, and surf spots - make it your next adventure Surrounded by farmland The Green Tent is super private and relaxing, make yourself at home and enjoy the peaceful rural setting', NULL, 'Rates', '                        <li>Air Conditioning</li>\r\n                        <li>Bathtub</li>\r\n                        <li>Bedrooms: 1</li>\r\n                        <li>Beds: 1</li>\r\n                        <li>Bathroom: 1</li>\r\n                        <li>Kitchen</li>\r\n                        <li>Wi-Fi</li>\r\n                        <li>Tv</li>\r\n                        <li>Dedicated Workspace</li>', '0', '', '                        <li>MIDWEEK (SUNDAY-THURSDAY)<br>One night stay $270 + $60 cleaning fee </li>\r\n                        <li>Two or more nights mid week<br>$260 per night + $60 cleaning fee</li>\r\n                        <li>WEEKENDS<br>2 night minimum stay $580</li>', NULL),
-(2, NULL, 'A luxurious Mongolian-style yurt set in rural Matakana within walking distance of the vibrant village.', 'the-green-tent-gallery-lounge-v1.jpg', NULL, NULL, 'the-green-tent-gallery-outside-seating-v', '0', '0', '0', NULL, NULL, NULL);
+(2, NULL, '                <p>\r\n                    A luxurious Mongolian-style yurt set in rural<br> \r\n                    Matakana within walking distance of the<br> \r\n                    vibrant village.\r\n                </p>', 'the-green-tent-gallery-lounge-v1.jpg', NULL, NULL, 'the-green-tent-gallery-outside-seating-v', '0', '0', '0', NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -131,7 +135,7 @@ INSERT INTO `pages` (`id`, `title1`, `para1`, `img1`, `title2`, `para2`, `img2`,
 -- Indexes for table `accounts`
 --
 ALTER TABLE `accounts`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `bookings`
@@ -160,19 +164,19 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=376;
 
 --
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pages`
@@ -188,7 +192,7 @@ ALTER TABLE `pages`
 -- Constraints for table `bookings`
 --
 ALTER TABLE `bookings`
-  ADD CONSTRAINT `bookings_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `bookings_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `accounts` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
