@@ -1,4 +1,7 @@
-<?php include 'head.php';
+<?php 
+include 'setup.php';
+include 'head.php';
+session_start();
 
 ?>
 

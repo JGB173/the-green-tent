@@ -1,4 +1,8 @@
-<?php include 'head.php';?>
+<?php 
+include 'head.php';
+include 'setup.php';
+session_start();
+?>
 
 <body>
     <div class="container">
