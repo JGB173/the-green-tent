@@ -47,7 +47,7 @@ session_start();
                                     </div>
                                     <div class="inputBox">
                                         <span>Mobile</span>
-                                        <input type="tel" placeholder="123-456-7890" id="phonenum" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+                                        <input type="tel" placeholder="123-456-7890" id="phonenum" name="phonenum">
                                     </div>
                                 </div>
                                 <div class="row100">
