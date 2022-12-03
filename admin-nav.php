@@ -5,6 +5,7 @@
             <a href="admin.php">Admin</a>
             <a href="messages.php">Messages</a>
             <a href="bookings-admin.php">Bookings</a>
+            <a href="accounts.php">Accounts</a>
             <a href="phplogin/logout.php"><i class="fas fa-sign-out-alt"></i></a>
         </div>
 

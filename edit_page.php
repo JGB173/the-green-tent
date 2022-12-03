@@ -23,7 +23,8 @@
 </head>
 
 <?php 
-include"setup.php";
+
+include "setup.php";
 
     $pageID= $_GET["id"];
 ?>
