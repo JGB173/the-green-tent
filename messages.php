@@ -52,7 +52,9 @@ if ($_SESSION['admin'] <> 1) {
                         $message=$row["message"];
                       ?>
                 <tr>
-                    <td><?php print $id; ?></td>
+                    <td><?php print $id; ?>
+                    <a href='message_delete.php?id=<?php print $id; ?>'>Delete</a>
+                    </td>
                     <td><?php print $fname; ?></td>
                     <td><?php print $lname; ?></td>
                     <td><?php print $email; ?></td>
