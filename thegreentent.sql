@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2022 at 02:27 AM
+-- Generation Time: Dec 15, 2022 at 01:50 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -44,8 +44,6 @@ INSERT INTO `accounts` (`user_id`, `username`, `password`, `email`, `activation_
 (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com', '', 0),
 (8, 'jb522', '$2y$10$VuswpSsKAOPj.at12.q1H.bNxDUW0r8Lx346c0SpRajrLav/2obBS', 'jb522@mahurangi.school.nz', '6302a507ae197', 0),
 (11, 'JGB', '$2y$10$7anXcnzD9h5RU296tvoh8u9cnMWEfUQ2uNVcVybDyKbf9vcCBaxLS', 'jgburgess173@gmail.com', '63255ab76f51e', 0),
-(12, 'josh', '$2y$10$9KWp4JrIzwh7bHgR5Un7zO9xk/9A9rNgL3/4OiA14PpyyaHH/KXK.', 'jb522@mahurangi.school.nz', '635867ff9f914', 0),
-(13, 'test2', '$2y$10$2MxBY0DOrKc9Bopy4N2ABOebM/2DcMxzYetXui7r/I1iqGRGtciK2', 'test@gmail.com', '63586a596a2e5', 0),
 (14, 'admin', '$2y$10$a03qn/AfsbMXjKAiGxy3cOtxXpM8UXpuMeX3bArpDv/l59dBfou1q', 'stay@thegreentent.co.nz', '63599411654a1', 1);
 
 -- --------------------------------------------------------
@@ -65,12 +63,13 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`id`, `user_id`, `booking_date`) VALUES
-(348, 11, '2022-11-26'),
-(349, 11, '2022-11-27'),
-(362, 8, '2022-11-22'),
-(363, 8, '2022-11-23'),
-(364, 8, '2022-11-24'),
-(365, 8, '2022-11-25');
+(376, 11, '2023-02-15'),
+(377, 11, '2023-02-16'),
+(378, 11, '2023-02-17'),
+(379, 11, '2023-02-18'),
+(390, 8, '2023-04-15'),
+(391, 8, '2023-04-16'),
+(392, 8, '2023-04-17');
 
 -- --------------------------------------------------------
 
@@ -93,9 +92,7 @@ CREATE TABLE `messages` (
 
 INSERT INTO `messages` (`id`, `fname`, `lname`, `email`, `phonenum`, `message`) VALUES
 (1, 'Joshua', 'Burgess', 'JGBurgess173@gmail.com', '0274902590', 'Hello world'),
-(7, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test'),
-(8, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test'),
-(9, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test');
+(7, 'Joshua', 'Burgess', 'jgburgess173@gmail.com', '027-490-2590', 'This is a test');
 
 -- --------------------------------------------------------
 
@@ -170,7 +167,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=376;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=404;
 
 --
 -- AUTO_INCREMENT for table `messages`
